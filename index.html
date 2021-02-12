@@ -1,20 +1,4 @@
 
-<?php
-
-
-if($_POST["message"]) {
-
-
-mail("myxzptlk0@gmail.com", "Here is the subject line",
-
-
-$_POST["Hi there!! What do you wanna know, message me at myxzptlk0@gmail.com"]. "From: an@email.address");
-
-
-}
-
-
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -96,9 +80,21 @@ $_POST["Hi there!! What do you wanna know, message me at myxzptlk0@gmail.com"]. 
                 <h1>Wisdom Myxzptlk</h1> 
                 <img src= "wisdom.jpg">
                 <p>Hi! I'm Wisdom Myxzptlk, a software developer. Say hello!</p>
-                <form method="post" action="subscriberform.php">
+                
                 <input type="text" placeholder="Your email" > <input type="Submit">
-                </form>
+         <form action="mailto:myxzptlk0@gmail.com"
+method="POST"
+enctype="multipart/form-data"
+name="EmailForm">
+    Name:<br>
+    <input type="text" size="19" name="Contact-Name"><br><br>
+    Email:<br>
+    <input type="email" name="Contact-Email"><br><br> 
+    Message:<br> 
+    <textarea name="Contact-Message" rows="6″ cols="20″>
+    </textarea><br><br> 
+    <button type="submit" value="Submit">Send</button>
+</form>
             </div>
         </header>
         <div>
