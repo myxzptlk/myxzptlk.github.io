@@ -1,3 +1,20 @@
+
+<?php
+
+
+if($_POST["message"]) {
+
+
+mail("myxzptlk0@gmail.com", "Here is the subject line",
+
+
+$_POST["Hi there!! What do you wanna know, message me at myxzptlk0@gmail.com"]. "From: an@email.address");
+
+
+}
+
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -79,7 +96,9 @@
                 <h1>Wisdom Myxzptlk</h1> 
                 <img src= "wisdom.jpg">
                 <p>Hi! I'm Wisdom Myxzptlk, a software developer. Say hello!</p>
-                <input type="text" placeholder="Your email"> <input type="Submit">
+                <form method="post" action="subscriberform.php">
+                <input type="text" placeholder="Your email" > <input type="Submit">
+                </form>
             </div>
         </header>
         <div>
